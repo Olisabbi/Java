@@ -1,35 +1,24 @@
 package AtributosMetodosFinais;
 
+import javax.swing.JOptionPane;
 
 public class CalculoMarkupe {
     
-    private static final double MARKUP = 1.5;
-    private double preco;
-    private double compra;
 
-    public double getMarkup() {
-        return MARKUP;
-    } 
-
-    public double getPreco() {
-        return preco;
-    }
-
-    public void setPreco(double preco) {
-        this.preco = preco;
-    }
-
-    public double getCompra() {
-        return compra;
-    }
-
-    public void setCompra(double compra) {
-        this.compra = compra;
-    }
-
-    public final double calculaMarkup() {
-        return MARKUP * preco * compra;
-    }
-
-   
+    
+    private final double MARKUP = 1.54;
+    private double precoCompra;
+    private double precoVenda;
+    
+    
+    public final void calculaPreco(double precoCompra){
+    
+        this.precoCompra = precoCompra;
+        
+        precoVenda = MARKUP * precoCompra;
+        
+        JOptionPane.showMessageDialog(null, "Preço sugerido de venda R$ " + precoVenda);
+    
+    
+    }   
 }
