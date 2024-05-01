@@ -2,6 +2,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import java.awt.Frame;
 
 class Evento {
     String titulo;
@@ -25,6 +26,9 @@ class Evento {
 public class Agenda {
 
     public static void main(String[] args) {
+       /*  Frame janela = new Frame();
+        janela.setResizable(true);
+        janela.setVisible(true);*/
         Scanner scanner = new Scanner(System.in);
         boolean continuar = true;
 
