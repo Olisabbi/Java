@@ -1,3 +1,5 @@
+package ListaEncadeada;
+
 public class ListaEncadeada {
     
     Node head;

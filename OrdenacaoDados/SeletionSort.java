@@ -1,4 +1,4 @@
-package Ordenacao;
+package OrdenacaoDados;
 
 /**
  * SeletionSort
